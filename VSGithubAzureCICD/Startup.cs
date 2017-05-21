@@ -12,6 +12,8 @@ namespace VSGithubAzureCICD
 {
     public class Startup
     {
+        private IConfigurationRoot _config;
+
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
